@@ -83,6 +83,10 @@ footer {
 .link:hover {
   color: var(--primary-color-light);
 }
+.list {
+  display: flex;
+  justify-content: space-evenly;
+}
 /*main*/
 .main_information {
   display: flex;

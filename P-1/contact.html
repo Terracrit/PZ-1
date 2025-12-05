@@ -18,7 +18,60 @@
       </nav>
     </header>
     <main>
-      <address>
+      <form name="model-form" class="modal-form-inputs" id="model-form">
+        <div class="form-field">
+          <label class="hidden user-label" for="user-name"
+            >Ваше ім'я та прізвище</label
+          >
+          <input
+            class="form-input"
+            type="text"
+            id="user-name"
+            name="user-name"
+            placeholder="Ваше ім'я та прізвище"
+            required
+            pattern="^[A-ZА-ЯЇІЄҐ][a-zа-яїієґ']+\s[A-ZА-ЯЇІЄҐ][a-zа-яїієґ']+$"
+            title="Введіть ім'я та прізвище з великої літери, наприклад: Іван Петренко"
+          />
+        </div>
+
+        <div class="form-field">
+          <label class="hidden user-label" for="user-tel"
+            >Ваш номер телефону</label
+          >
+          <input
+            class="form-input"
+            type="tel"
+            id="user-tel"
+            name="user-tel"
+            placeholder="Ваш номер телефону"
+            required
+            pattern="^\+380\d{9}$"
+            title="Номер телефону має бути у форматі +380XXXXXXXXX (9 цифр)"
+          />
+        </div>
+
+        <div class="form-field">
+          <label class="hidden user-label" for="user-email"
+            >Ваша електронна пошта</label
+          >
+          <input
+            class="form-input"
+            type="email"
+            id="user-email"
+            name="user-email"
+            placeholder="Ваша електронна пошта"
+            required
+            title="Введіть правильну email-адресу"
+          />
+        </div>
+
+        <button type="submit" class="form-button button-section">
+          Записатись безкоштовно
+        </button>
+      </form>
+
+      <address class="address-list">
         <ul>
           <li>
             <a class="footer-link" href="+380960000007">+ 38 (096) 000 00 07</a>
@@ -51,5 +104,6 @@
         </ul>
       </address>
     </main>
+    <script src="./JS/form-print.js"></script>
   </body>
 </html>

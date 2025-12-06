@@ -148,3 +148,10 @@ footer {
 .form-field:hover input {
   cursor: pointer;
 }
+@media (max-width: 768px) {
+  .address-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

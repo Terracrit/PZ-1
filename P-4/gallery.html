@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>gallery</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="list">
+          <li><a class="link" href="index.html">Головна</a></li>
+          <li><a class="link" href="about.html">Про мене</a></li>
+          <li><a class="link" href="projects.html">Мої проекти</a></li>
+          <li><a class="link" href="contact.html">Контакти</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="gallery-section">
+      <h1 class="section-titel center"><span>Галерея</span></h1>
+
+      <div class="gallery-section__list">
+        <img class="gallery-section__img" src="./images/skrin_1.png" alt="" />
+        <img class="gallery-section__img" src="./images/skrin_2.png" alt="" />
+      </div>
+      <section class="media">
+        <video
+          id="myVideo"
+          width="800"
+          playsinline
+          autoplay
+          muted
+          loop
+          preload="auto"
+        >
+          <source
+            src="./video/Animatic Lemon Boy - Cavetown [get.gt].mp4"
+            type="video/mp4"
+          />
+          Ваш браузер не підтримує елемент .
+        </video>
+
+        <div class="controls">
+          <button id="btnPlay">Відтворити</button>
+          <button id="btnPause">Пауза</button>
+          <label for="vol">Гучність</label>
+          <input
+            id="vol"
+            type="range"
+            min="0"
+            max="1"
+            step="0.05"
+            value="0.5"
+          />
+          <span id="volLabel">50%</span>
+        </div>
+      </section>
+      <section class="canvas-section">
+        <h2>Canvas</h2>
+
+        <canvas id="myCanvas" width="800" height="200"></canvas>
+
+        <p class="credits">
+          Ідея та методи малювання взято з MDN Web Docs —
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial"
+            target="_blank"
+          >
+            Drawing graphics with canvas
+          </a>
+        </p>
+      </section>
+    </main>
+    <noscript>
+      <div style="color: red; font-weight: bold">
+        Увага! JavaScript вимкнено. Деякі функції сайту можуть не працювати.
+      </div>
+    </noscript>
+    <script src="./JS/headen.js"></script>
+    <script src="./JS/canvas.js"></script>
+    <script src="./JS/video.js"></script>
+  </body>
+</html>

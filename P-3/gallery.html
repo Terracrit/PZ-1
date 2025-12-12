@@ -24,6 +24,31 @@
         <img class="gallery-section__img" src="./images/skrin_1.png" alt="" />
         <img class="gallery-section__img" src="./images/skrin_2.png" alt="" />
       </div>
+      <section class="media">
+<h2>Відео (автовідтворення + панель управління)</h2>
+
+
+<!--
+Підказка: багато браузерів блокують autoplay зі звуком, тому тут відео встановлене як muted для гарантованого автозапуску.
+Ми все одно додаємо елементи керування (кнопки Відтворити/Паузу і повзунок гучності) — вони керують тим же елементом.
+-->
+
+
+<video id="myVideo" width="800" playsinline autoplay muted loop preload="auto" crossorigin="anonymous">
+<!-- Замість source вкажіть свій файл або URL до відео -->
+<source src="sample-video.mp4" type="video/mp4">
+Ваш браузер не підтримує елемент <video>.
+</video>
+
+
+<div class="controls">
+<button id="btnPlay">Відтворити</button>
+<button id="btnPause">Пауза</button>
+<label for="vol">Гучність</label>
+<input id="vol" type="range" min="0" max="1" step="0.05" value="0.5">
+<span id="volLabel">50%</span>
+</div>
+</section>
     </main>
     <noscript>
       <div style="color: red; font-weight: bold">

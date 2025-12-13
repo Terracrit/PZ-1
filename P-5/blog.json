@@ -1,0 +1,60 @@
+{
+  "siteOwner": {
+    "name": "Олександр",
+    "profession": "Frontend Developer",
+    "description": "Я цікавлюся програмуванням, дизайном та створенням сайтів."
+  },
+
+  "skills": [
+    "HTML / CSS",
+    "JavaScript",
+    "React",
+    "C++ (базовий рівень)",
+    "Робота в команді"
+  ],
+
+  "hobbies": ["Програмування", "Ігри", "Аніме", "Спорт або музика"],
+
+  "projects": [
+    {
+      "projectId": 1,
+      "name": "HTML/CSS Portfolio",
+      "technology": "HTML/CSS",
+      "duration": "1 рік",
+      "githubUrl": "https://github.com/Terracrit/homework"
+    },
+    {
+      "projectId": 2,
+      "name": "JavaScript Practice",
+      "technology": "JavaScript",
+      "duration": "6 місяців",
+      "githubUrl": "https://github.com/Terracrit/homework_JS"
+    },
+    {
+      "projectId": 3,
+      "name": "React Learning",
+      "technology": "React",
+      "duration": "Кілька місяців",
+      "githubUrl": "https://github.com/Terracrit/my-react"
+    }
+  ],
+
+  "gallery": [
+    {
+      "imageId": 1,
+      "src": "./images/skrin_1.png",
+      "description": "Скріншот першої роботи"
+    },
+    {
+      "imageId": 2,
+      "src": "./images/skrin_2.png",
+      "description": "Скріншот другої роботи"
+    }
+  ],
+
+  "contacts": {
+    "phone": "+380960000007",
+    "email": "beautyzone@gmail.com",
+    "address": "Україна, м. Київ, вул. Тараса Шевченка 5"
+  }
+}
